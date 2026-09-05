@@ -1,18 +1,31 @@
-# بوت R (Trend-Following)
+<div align="center">
 
-بوت بايثون يتابع السوق لحظيًا وينفذ استراتيجية تقاطع المتوسطات المتحركة (EMA) مع تأكيد من RSI والحجم، وفيه إدارة مخاطر مدمجة.
+# 🤖 R (Trend-Following Trading Bot)
 
-## تنويه مهم
-هذا الكود لأغراض تعليمية وبرمجية فقط، وليس نصيحة مالية أو استثمارية.
+> *A Python-based algorithmic trading bot designed for real-time market tracking, executing EMA crossover strategies with RSI and volume confirmation, featuring comprehensive built-in risk management.*
 
-## طريقة التثبيت
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Source_Code-blue?style=for-the-badge&logo=github)](https://github.com/Romakhedr/R)
+
+</div>
+
+---
+
+## ⚠️ Important Disclaimer
+> This code is for educational and programming purposes only; it does not constitute financial or investment advice.
+
+---
+
+## 📦 Installation
+
+```bash
 pip install -r requirements.txt
+🚀 Execution (Demo Mode)
+python src/trend_bot.py
+🛡️ Risk Management
+Position Sizing: Trade size is automatically calculated to ensure the potential loss does not exceed risk_per_trade_pct (default: 1%).
 
-## طريقة التشغيل (وضع تجريبي)
-python trend_bot.py
+Stop-Loss: Set dynamically via Stop-loss = Entry price minus (ATR × 2).
 
-## إدارة المخاطر
-- حجم الصفقة يُحسب تلقائيًا بحيث لا تتجاوز الخسارة نسبة risk_per_trade_pct (1% افتراضيًا)
-- وقف الخسارة = سعر الدخول ناقص (ATR × 2)
-- جني الأرباح = المخاطرة × risk_reward_ratio (2 افتراضيًا)
-- حد خسارة يومي max_daily_loss_pct (5% افتراضيًا) يوقف البوت تلقائيًا
+Take-Profit: Calculated using Take-profit = Risk amount × risk_reward_ratio (default: 2).
+
+Daily Loss Limit: A daily loss limit (max_daily_loss_pct, default: 5%) automatically stops the bot.
