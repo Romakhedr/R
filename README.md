@@ -4,7 +4,8 @@
 
 > *A Python-based algorithmic trading bot designed for real-time market tracking, executing EMA crossover strategies with RSI and volume confirmation, featuring comprehensive built-in risk management.*
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Source_Code-blue?style=for-the-badge&logo=github)](https://github.com/Romakhedr/R)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Source_Code-blue?style=for-the-badge&logo=github)]
+(https://github.com/Romakhedr/R)
 </div>
 ---
 
