@@ -21,11 +21,10 @@
 pip install -r requirements.txt
 🚀 Execution (Demo Mode)
 python src/trend_bot.py
-🛡️ Risk Management
-Position Sizing: Trade size is automatically calculated to ensure the potential loss does not exceed risk_per_trade_pct (default: 1%).
 
-Stop-Loss: Set dynamically via Stop-loss = Entry price minus (ATR × 2).
+## 🛡️ Risk Management
 
-Take-Profit: Calculated using Take-profit = Risk amount × risk_reward_ratio (default: 2).
-
-Daily Loss Limit: A daily loss limit (max_daily_loss_pct, default: 5%) automatically stops the bot.
+* **Position Sizing:** Trade size is automatically calculated to ensure the potential loss does not exceed `risk_per_trade_pct` (default: `1%`).
+* **Stop-Loss:** Set dynamically via `Stop-loss = Entry price minus (ATR × 2)`.
+* **Take-Profit:** Calculated using `Take-profit = Risk amount × risk_reward_ratio` (default: `2`).
+* **Daily Loss Limit:** A daily loss limit (`max_daily_loss_pct`, default: `5%`) automatically stops the bot.
